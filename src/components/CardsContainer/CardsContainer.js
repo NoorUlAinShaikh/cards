@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import IndividualCard from "../IndividualCard/IndividualCard";
 import useFetchCards from "../../hooks/useFetchCards";
 import { customLabels } from "../../constants/customLabels";
+import "./CardsContainer.css";
 
 const CardsContainer = () => {
 	const [cards, fetchCards, loading] = useFetchCards();

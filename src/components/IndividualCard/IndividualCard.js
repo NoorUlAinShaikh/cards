@@ -1,5 +1,6 @@
 import React from "react";
 import { customLabels } from "../../constants/customLabels";
+import "./IndividualCard.css";
 
 const IndividualCard = props => {
 	const { TITLE_DEFAULT, CHRONICLE_DEFAULT, LOCATION_DEFAULT } = customLabels;
@@ -14,12 +15,25 @@ const IndividualCard = props => {
 	} = props;
 
 	return (
-		<div className="card">
-			{image_url && <img src={`${image_url}`} alt="The Perfect Room" />}
-			<div>{title}</div>
-			<div>{chronicle}</div>
-			<div>{location}</div>
-		</div>
+		<a
+			className="card-link"
+			href={image_url}
+			target="_blank"
+			rel="noreferrer nofollow noopener"
+		>
+			<div className={`card ${image_url ? "" : "justify-center-important"}`}>
+				{image_url && (
+					<div className="card-image">
+						<img src={`${image_url}`} alt="The Perfect Room" />
+					</div>
+				)}
+				<div className="card-content">
+					<div className="card-title">{title}</div>
+					<div className="card-chronicle">{chronicle}</div>
+					<div className="card-location">{location}</div>
+				</div>
+			</div>
+		</a>
 	);
 };
 

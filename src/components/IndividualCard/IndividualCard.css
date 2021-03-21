@@ -1,0 +1,73 @@
+.card-link {
+	text-decoration: none;
+	color: black;
+}
+
+.card-link:hover {
+	color: black;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	height: 500px;
+	border-radius: 5px;
+	-moz-box-shadow: 0px 0px 4px 1px rgb(157 157 157 / 60%);
+	-webkit-box-shadow: 0px 0px 4px 1px rgb(157 157 157 / 60%);
+	box-shadow: 0px 0px 4px 1px rgb(157 157 157 / 60%);
+	cursor: pointer;
+
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+	box-shadow: 0px 0px 8px 4px rgb(146 143 143 / 60%);
+}
+.card:focus {
+	box-shadow: 0px 0px 8px 4px rgb(35 28 28 / 60%);
+	outline: none;
+}
+
+.card-image {
+	width: 100%;
+}
+
+.card-image img {
+	width: 100%;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.card-content {
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.card-title {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: small;
+}
+
+.card-chronicle {
+	font-weight: 700;
+	font-size: xx-large;
+	line-height: 36px;
+}
+
+.card-location {
+	font-weight: 600;
+}
+
+.card-title,
+.card-location {
+	color: #bdbdbd;
+}
+
+.justify-center-important {
+	justify-content: center !important;
+}
