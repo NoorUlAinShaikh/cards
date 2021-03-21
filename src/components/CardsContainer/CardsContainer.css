@@ -1,0 +1,23 @@
+.cards-container {
+	max-width: 1024px;
+	margin: auto;
+	padding: 2rem;
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+	.cards-container {
+		padding: 1rem;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.cards-container {
+		padding: 0.5rem;
+	}
+}
