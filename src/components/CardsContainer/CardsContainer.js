@@ -10,6 +10,7 @@ const CardsContainer = () => {
 	useEffect(() => {
 		//fetch Cards on mount
 		if (typeof fetchCards === "function") fetchCards();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 
 	const renderCards = () => {
